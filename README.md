@@ -36,7 +36,6 @@
             <th>Fri</th>
             <th>Sat</th>
         </tr>
-        <!-- Days will be populated dynamically -->
     </table>
 
     <div id="statistics">
@@ -58,7 +57,6 @@
         for (let i = 1; i <= daysInMonth; i++) {
             const dayOfWeek = (i + 5) % 7; // Start with Saturday (0) to align days
             if (dayOfWeek === 0) {
-                // Start a new row for the next week
                 const newRow = document.createElement('tr');
                 table.appendChild(newRow);
             }
@@ -97,7 +95,6 @@
             }
         }
 
-        // Initial update of statistics
         updateStatistics();
     </script>
 </body>
